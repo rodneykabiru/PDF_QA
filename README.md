@@ -57,8 +57,9 @@ To start the Flask application, run:
 
 ```bash
 python app.py
-The app will be available locally at http://127.0.0.1:5000/.
 ```
+The app will be available locally at http://127.0.0.1:5000/.
+
 ### 5. Open the App in Your Browser
 Open your browser and go to http://127.0.0.1:5000/.
 Upload a PDF file, and the app will generate questions based on the content of the PDF.
