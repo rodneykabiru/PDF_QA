@@ -23,8 +23,8 @@ Before running the app, make sure you have the following installed:
 First, clone this repository to your local machine:
 
 ```bash
-git clone https://github.com/your-username/pdf-question-generator.git
-cd pdf-question-generator
+git clone https://github.com/rodneykabiru/PDF_QA.git
+cd PDF_QA
 ```
 ### 2. Set Up a Virtual Environment (Optional but Recommended)
 It's a good practice to create a virtual environment to keep dependencies isolated:
