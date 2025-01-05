@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Q&A System</title>
+</head>
+<body>
+    <h1>Answer the Questions</h1>
+
+    <!-- File Upload Form -->
+    {% if not questions or questions|length == 0 %}
+        <h2>Upload a PDF File to Generate Questions</h2>
+        <form action="/" method="POST" enctype="multipart/form-data">
+            <input type="file" name="file" accept=".pdf" required>
+            <button type="submit">Upload</button>
+        </form>
+    {% else %}
+        <!-- Question & Answer Form -->
+        <h2>Please Answer the Questions</h2>
+        <form action="/submit" method="post">
+            {% for qa in questions %}
+            <div>
+                <p><strong>Question {{ loop.index }}:</strong> {{ qa.question }}</p>
+                <input type="text" name="q{{ loop.index }}" required>
+            </div>
+            {% endfor %}
+            <button type="submit">Submit</button>
+        </form>
+    {% endif %}
+</body>
+</html>
