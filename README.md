@@ -31,38 +31,31 @@ It's a good practice to create a virtual environment to keep dependencies isolat
 
 ```bash
 python -m venv venv
-
 ```
 On Windows, activate the virtual environment using:
 
 ```bash
-
 venv\Scripts\activate
-
 ```
 On macOS/Linux, use:
 
 ```bash
-Copy code
 source venv/bin/activate
 ```
 ### 3. Install Dependencies
 Install the required dependencies listed in requirements.txt:
 
 ```bash
-Copy code
 pip install -r requirements.txt
 Or manually install these dependencies:
 ```
 ```bash
-Copy code
 pip install flask pdfplumber transformers sentence-transformers
 ```
 ### 4. Run the Application
 To start the Flask application, run:
 
 ```bash
-Copy code
 python app.py
 The app will be available locally at http://127.0.0.1:5000/.
 ```
