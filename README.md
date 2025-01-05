@@ -36,7 +36,7 @@ python -m venv venv
 On Windows, activate the virtual environment using:
 
 ```bash
-Copy code
+
 venv\Scripts\activate
 
 ```
